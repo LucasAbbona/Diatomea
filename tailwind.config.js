@@ -9,7 +9,7 @@ module.exports = {
         navBar: "#FFFCF7"
       },
       primary:{
-        darkGrey: "#403FE",
+        darkGrey: "#403F3E",
         grey: "#737272",
         lightGrey: "#D9D6D2",
         lighterGrey: "#BFBBB8",
