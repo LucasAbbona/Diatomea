@@ -1,6 +1,7 @@
 import React from "react";
-import BtnNavbar from "../Buttons/BtnNavbar";
+import BtnNavbar from "./BtnNavbar";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import SearchBar from "./SearchBar";
 const NavBar = () => {
   //Coleccion de botones NavBar
   const btnNavBarCollection = [
@@ -38,8 +39,11 @@ const NavBar = () => {
   ));
 
   return (
-    <nav className="bg-bg-navBar">
-      <ul>{renderBtnNavBar}</ul>
+    <nav className="bg-bg-navBar py-6 pb-6 	pl-40 pr-40 flex justify-center items-center">
+      <ul className="flex justify-between w-full">
+        {renderBtnNavBar}
+        <SearchBar></SearchBar>
+      </ul>
     </nav>
   );
 };
