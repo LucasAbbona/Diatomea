@@ -1,12 +1,16 @@
-import './App.css'
+import "./App.css";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <p className='text-center font-bold text-3xl'>Diatomea</p>
-    </>
-  )
-}
+    <div className="App">
+      <header>
+        
+      </header>
+      <main className="bg-bg-page">
 
-export default App
+      </main>
+    </div>
+  );
+};
+
+export default App;
