@@ -1,8 +1,5 @@
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import AccordionComponenet from "../components/Accordion";
+
 
 const Faq = () => {
     return (
@@ -14,21 +11,21 @@ const Faq = () => {
             </div>
 
             {/* Accordion */}
-            <div className='w-full px-20'>
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <Typography>¿Cuál es el tiempo de demora que lleva personalizar una joya?</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Typography>
-                        El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+            <div className='w-full px-5 md:px-20 flex flex-col gap-8'>
+                <AccordionComponenet title={"¿Cuál es el tiempo de demora que lleva personalizar una joya?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Qué medios de pago recibís? "} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Trabajas con otros materiales que no sea plata u oro?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Cuál es el tiempo de demora que lleva personalizar una joya?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Qué tipo de arreglos realizan?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Cómo tomo las medidas para mi joya?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Cómo limpio mis joyas?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Puedo grabar lo que sea?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Hacen envíos?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Los productos tienen garantía?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Con qué gemas/piedras trabajas?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Qué es el certificado de calidad?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                <AccordionComponenet title={"¿Puedo devolver o cambiar un producto?"} description={"El tiempo de demora dependerá de la complejidad de la pieza que se encargue. Por lo general el tiempo es de 7 a 10 días hábiles, pero para saber con exactitud le pedimos que consulte."} />
+                
             </div>
 
             {/* Contact */}
