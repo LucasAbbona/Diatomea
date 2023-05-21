@@ -2,7 +2,7 @@ import React from 'react'
 import {RxMagnifyingGlass} from "react-icons/rx"
 const SearchBar = () => {
   return (
-    <div><RxMagnifyingGlass style={{fontSize: "24px"}}/></div>
+    <div className='flex justify-center'><RxMagnifyingGlass style={{fontSize: "24px"}}/></div>
   )
 }
 

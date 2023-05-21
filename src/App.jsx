@@ -10,7 +10,8 @@ const App = () => {
         </section>
         <NavBar></NavBar>
       </header>
-      <main className="bg-bg-page"></main>
+      <main className="bg-bg-page">
+      </main>
     </div>
   );
 };
