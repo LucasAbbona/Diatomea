@@ -2,9 +2,10 @@ import { useState } from "react"
 import Restauraciones from "../components/Restauraciones"
 import Limpieza from "../components/Limpieza"
 import Custom from "../components/Custom"
+import Grabado from "../components/Grabado"
 
 const Servicios = () => {
-    const [custom,setCustom] = useState(false)
+    const [custom,setCustom] = useState(true)
     const [reparaciones,setReparaciones] = useState(false)
     const [grabado,setGrabado] = useState(false)
     const [clean,setClean] = useState(false)
@@ -28,6 +29,7 @@ const Servicios = () => {
             <Restauraciones />}
             {clean && <Limpieza/>}
             {custom && <Custom />}
+            {grabado && <Grabado/>}
         </div>
     )
 }
