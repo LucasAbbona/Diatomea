@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Restauraciones from "../components/Restauraciones"
 import Limpieza from "../components/Limpieza"
+import Custom from "../components/Custom"
 
 const Servicios = () => {
     const [custom,setCustom] = useState(false)
@@ -26,7 +27,7 @@ const Servicios = () => {
             {reparaciones && 
             <Restauraciones />}
             {clean && <Limpieza/>}
-            
+            {custom && <Custom />}
         </div>
     )
 }
