@@ -3,6 +3,7 @@ import picture7 from '../assets/Services/pict7.png'
 import picture8 from '../assets/Services/pict8.png'
 import picture9 from '../assets/Services/pict9.png'
 import picture10 from '../assets/Services/pict10.png'
+import CustomGalery from './CustomGalery'
 
 
 const Custom = () => {
@@ -28,6 +29,7 @@ const Custom = () => {
                     </div>
                 </div>
             </div>
+            <CustomGalery />
             <div className='w-full px-5 md:px-20 my-20 flex flex-col items-center gap-10'>
                 <p className='text-2xl font-semibold'>Joya final</p>
                 <div className='w-full flex flex-col md:flex-row gap-4'>
