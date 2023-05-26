@@ -1,4 +1,3 @@
-import React from 'react'
 import {RxMagnifyingGlass} from "react-icons/rx"
 const SearchBar = () => {
   return (
