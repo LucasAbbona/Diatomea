@@ -5,11 +5,12 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import QuienesSomos from "./pages/QuienesSomos.jsx";
 import Faq from "./pages/FAQ";
 import Servicios from "./pages/Servicios";
+import NavBarTop from './components/NavBar/NavBarTop'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
-      <header></header>
+      <NavBarTop/>
       <main className="bg-bg-page">
         <Routes>
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
