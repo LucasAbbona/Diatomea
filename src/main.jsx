@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
       <NavBarTop/>
-      <main className="bg-bg-page">
+      <main className="bg-bg-page mt-40">
         <Routes>
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
           <Route path="/FAQ" element={<Faq />} />

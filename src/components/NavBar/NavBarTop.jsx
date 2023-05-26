@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 
 const NavBarTop = () => {
   return (
-    <header>
+    <header className='fixed top-0 w-full z-50'>
         <section className="bg-primary-darkGrey  py-6 pb-6 flex justify-center items-center">
           <img src={logonav} alt="logo de Diatomea" className="w-60 "/>
         </section>
