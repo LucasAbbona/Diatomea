@@ -7,7 +7,6 @@ import { useState } from "react";
 import Information from "./Dropdowns/Information";
 import Creations from "./Dropdowns/Creations";
 import Services from "./Dropdowns/Services";
-import ResponsiceBtnNavBar from "./ResponsiceBtnNavBar";
 
 const NavBar = () => {
   //Coleccion de botones NavBar
@@ -71,10 +70,6 @@ const NavBar = () => {
       setterMenu={setMenu}
       dropdown={btn.dropdown}
       onHoverFx={onHoverFx}
-      // setterDesktopDropdown={setDesktopDropdown}
-      // desktopDropdown={desktopDropdown}
-      // isOpenDskDropdown={isOpenDskDropdown}
-      // setterisOpenDskDropdown={setisOpenDskDropdown}
     ></BtnNavbar>
   ));
 
@@ -94,6 +89,7 @@ const NavBar = () => {
         <ul
           className={
             "flex justify-between flex-col md:flex-row w-full md:gap-2 gap-8 max-[768px]:justify-start" +
+            // Condicional que estila según si el menu esta activo o no
             (menu
               ? " max-[768px]:flex max-[768px]:h-[calc(100vh_-_80px)] max-[768px]:overflow-y-scroll max-[768px]:p-12 no-scrollbar"
               : " max-[768px]:hidden ")

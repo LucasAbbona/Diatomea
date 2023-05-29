@@ -10,8 +10,11 @@ const BtnNavbar = ({
   dropdown,
   onHoverFx,
 }) => {
+  // Estado para manejar el estilado del dropdown
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
 
+  // Fx onclick que se fija si contiene un dropdown para ver si lo desplega o no,
+  // sino cierra el menu (la navegacion esta en link to=)
   const onClickFx = () => {
     if (dropdown) {
       setIsOpenDropdown(!isOpenDropdown);
@@ -31,10 +34,12 @@ const BtnNavbar = ({
           {text}
           {icon}
         </li>
+        {/* Si hay un dropdown prepara el div con esa data */}
         {dropdown && (
           <div
             className={
               "hidden w-full h-auto bg-primary-darkGrey mt-2 border-y-2" +
+              // Condicional que estila el dropdown si está seleccionado
               (isOpenDropdown ? " max-[768px]:flex " : " max-[768px]:hidden ")
             }
             onClick={(e) => setterMenu(!stateMenu)}
