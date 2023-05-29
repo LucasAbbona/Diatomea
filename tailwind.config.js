@@ -4,21 +4,22 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'nunito': ['nunito', 'sans-serif'],
+        'nunito': ['Nunito'],
+        'fahkwang': ['Fahkwang'],
       },
     },
     colors: {
       bg: {
         page: "#FFFFFF",
-        navBar: "#FFFCF7"
+        navBar: "#FFFCF7",
       },
-      primary:{
+      primary: {
         darkGrey: "#403F3E",
         grey: "#737272",
         lightGrey: "#D9D6D2",
         lighterGrey: "#BFBBB8",
       },
-      secondary:{
+      secondary: {
         darkBrown: "#C4A281",
         brown: "#E2C3AA",
         lightBrown: "#DAC3B1",

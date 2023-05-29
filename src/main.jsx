@@ -5,14 +5,16 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import QuienesSomos from "./pages/QuienesSomos.jsx";
 import Faq from "./pages/FAQ";
 import Servicios from "./pages/Servicios";
-import NavBarTop from './components/NavBar/NavBarTop'
+import Inicio from "./pages/Inicio";
+import NavBarTop from "./components/NavBar/NavBarTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
-      <NavBarTop/>
+      <NavBarTop />
       <main className="bg-bg-page mt-40">
         <Routes>
+          <Route path="/" element={<Inicio />} />
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
           <Route path="/FAQ" element={<Faq />} />
           <Route path="/Servicios" element={<Servicios />} />
