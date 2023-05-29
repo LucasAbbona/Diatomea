@@ -6,12 +6,13 @@ import QuienesSomos from "./pages/QuienesSomos.jsx";
 import Faq from "./pages/FAQ";
 import Servicios from "./pages/Servicios";
 import Inicio from "./pages/Inicio";
+import NavBarTop from "./components/NavBar/NavBarTop";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
-      <header className=""></header>
-      <main className="bg-bg-page">
+      <NavBarTop />
+      <main className="bg-bg-page mt-40">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/QuienesSomos" element={<QuienesSomos />} />

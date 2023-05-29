@@ -1,14 +1,9 @@
 import "./App.css";
-
+import NavBarTop from "./components/NavBar/NavBarTop";
 const App = () => {
   return (
     <div className="App">
-      <header>
-        
-      </header>
-      <main className="bg-bg-page">
-
-      </main>
+      <NavBarTop/>
     </div>
   );
 };
