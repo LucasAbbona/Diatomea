@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
       <NavBarTop />
-      <main className="bg-bg-page mt-40">
+      <main className="bg-bg-page mt-[152px] max-[768px]:mt-[79px]">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
