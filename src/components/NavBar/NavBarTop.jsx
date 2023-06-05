@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 const NavBarTop = () => {
   return (
     <header
-      className="fixed top-0 w-full z-50 h-[152px]
+      className="fixed top-0 w-full z-40 h-[152px]
     max-[768px]:h-20"
     >
       <section className="bg-primary-darkGrey  py-6 pb-6 flex justify-center items-center h-[80px]">

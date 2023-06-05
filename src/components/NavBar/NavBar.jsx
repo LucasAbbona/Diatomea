@@ -77,7 +77,7 @@ const NavBar = () => {
     <>
       <nav
         className="bg-bg-navBar py-6 pb-6 px-20 md:px-26 lg:px-40 flex relative justify-center items-center
-      max-[768px]:p-0 "
+      max-[768px]:p-0 z-40"
       >
         <button
           className="inline md:hidden absolute z-50 left-5 text-bg-page"

@@ -5,27 +5,27 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode } from "swiper";
+import BtnSections from "./Buttons/BtnSections";
 
-const ResponsiveServicesBar = ({clean,custom,grabado,reparaciones,setClean,setCustom,setGrabado,setReparaciones}) => {
+const ResponsiveServicesBar = ({ active,elements }) => {
     return (
         <Swiper
             slidesPerView={2}
             spaceBetween={8}
             freeMode={true}
             modules={[FreeMode]}
-            className="md:hidden flex w-full  pr-5"
-        >
+            className="md:hidden flex w-full pr-5">
             <SwiperSlide className="ml-5">
-                <div className={custom ? "cursor-pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium bg-secondary-darkBrown" : "cursor-pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium outline-secondary-darkBrown  ring-0"} onClick={() => { setCustom(true); setClean(false); setGrabado(false); setReparaciones(false) }}>Joya personalizada</div>
+                <BtnSections text={'Joya Personalizada'} path={'/Servicios/Personalizada'} condition={active == 'custom' ? true : false} />
             </SwiperSlide>
             <SwiperSlide>
-                <div className={reparaciones ? "cursor-pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium bg-secondary-darkBrown" : "cursor-pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium outline-secondary-darkBrown  ring-0"} onClick={() => { setCustom(false); setClean(false); setGrabado(false); setReparaciones(true) }}>Arreglo y restauracion</div>
+                <BtnSections text={'Arreglo y reparaciones'} path={'/Servicios/Reparaciones'} condition={active == 'repair' ? true : false} />
             </SwiperSlide>
             <SwiperSlide>
-                <div className={grabado ? "cursor-pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium bg-secondary-darkBrown" : "cursor-pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium outline-secondary-darkBrown  ring-0"} onClick={() => { setCustom(false); setClean(false); setGrabado(true); setReparaciones(false) }}>Grabado</div>
+                <BtnSections text={'Grabado'} path={'/Servicios/Grabaciones'} condition={active == 'grabado' ? true : false} />
             </SwiperSlide>
-            <SwiperSlide className="pr-5">
-                <div className={clean ? "cursor pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium bg-secondary-darkBrown" : "cursor pointer text-center w-full py-2 px-2.5 rounded-t-md border-2 border-secondary-darkBrown text-primary-darkGrey text-lg font-medium outline-secondary-darkBrown  ring-0"} onClick={() => { setCustom(false); setClean(true); setGrabado(false); setReparaciones(false) }}>Limpieza</div>
+            <SwiperSlide>
+                <BtnSections text={'Limpieza'} path={'/Servicios/Limpieza'} condition={active == 'clean' ? true : false} />
             </SwiperSlide>
         </Swiper>
     )

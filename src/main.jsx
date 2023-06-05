@@ -18,6 +18,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
           <Route path="/FAQ" element={<Faq />} />
           <Route path="/Servicios" element={<Servicios />} />
+          <Route path="/Servicios/Personalizada" element={<Servicios section={'custom'}/>}/>
+          <Route path="/Servicios/Grabaciones" element={<Servicios section={'grabado'}/>}/>
+          <Route path="/Servicios/Limpieza" element={<Servicios section={'clean'}/>}/>
+          <Route path="/Servicios/Reparaciones" element={<Servicios section={'repair'}/>}/>
         </Routes>
       </main>
     </div>

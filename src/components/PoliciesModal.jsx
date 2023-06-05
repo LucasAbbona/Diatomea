@@ -1,7 +1,7 @@
 import {RxCross1} from 'react-icons/rx'
 const PoliciesModal = ({setting}) => {
   return (
-    <div className="w-full h-full fixed top-0 flex justify-center bg-primary-grey bg-opacity-50">
+    <div className="w-full h-full fixed top-0 flex justify-center bg-primary-grey bg-opacity-50" style={{zIndex:1000}}>
         <div className=" bg-bg-page p-10 md:p-16 rounded-xl w-11/12 md:2/3 lg:w-1/2 flex flex-col gap-5 items-start mt-16 h-5/6 overflow-y-scroll relative ">
         <RxCross1 className='absolute right-8 top-8 cursor-pointer' onClick={()=>setting(false)} size={20} color='black'/>
         <p className="text-2xl md:text-3xl font-medium self-center mb-5">Políticas de cambio y devolución</p>
