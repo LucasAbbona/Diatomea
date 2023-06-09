@@ -1,0 +1,180 @@
+{
+  "categorias": {
+    "tiposJoya": {
+      "anillos": 1,
+      "dijes": 2,
+      "pulserasTobilleras": 3,
+      "aros": 4,
+      "cadenas": 5
+    },
+    "tiposMetal": { "oro": 1, "plata": 2 }
+  },
+  "productos": [
+    {
+      "nombre": "Anillo Mensaje",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im2"
+    },
+    {
+      "nombre": "Anillo tiempo",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im3"
+    },
+    {
+      "nombre": "Anillo tiempo",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im4"
+    },
+    {
+      "nombre": "Alianzas tiempo",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im5"
+    },
+    {
+      "nombre": "Anillo tubo",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im6"
+    },
+    {
+      "nombre": "Anillo Marie",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im7"
+    },
+    {
+      "nombre": "Collar Gema",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im8"
+    },
+    {
+      "nombre": "Anillo Mensaje",
+      "tipoJoya": 1,
+      "tipoMetal": [1, 2],
+      "img": "im1"
+    },
+    {
+      "nombre": "Medalla doble",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im10"
+    },
+    {
+      "nombre": "Medalla doble",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im11"
+    },
+    {
+      "nombre": "Dije rectangular",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im12"
+    },
+    {
+      "nombre": "Dije corazon",
+      "tipoJoya": [2, 5],
+      "tipoMetal": [1, 2],
+      "img": "im13"
+    },
+    {
+      "nombre": "Dije oval",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im14"
+    },
+    {
+      "nombre": "Pulsera mensajera",
+      "tipoJoya": 3,
+      "tipoMetal": [1, 2],
+      "img": "im15"
+    },
+    { "nombre": "Dije Nido", 
+      "tipoJoya": 2, 
+      "tipoMetal": 2, 
+      "img": "im18" 
+    },
+    {
+      "nombre": "Collar Gema",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im9"
+    },
+    {
+      "nombre": "Dije rectangular",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im19"
+    },
+    {
+      "nombre": "Dije esferas",
+      "tipoJoya": [2, 5],
+      "tipoMetal": 2,
+      "img": "im20"
+    },
+    {
+      "nombre": "Dije tubito",
+      "tipoJoya": [2, 5],
+      "tipoMetal": 2,
+      "img": "im21"
+    },
+    {
+      "nombre": "Pulsera mensajera",
+      "tipoJoya": 3,
+      "tipoMetal": [1, 2],
+      "img": "im16"
+    },
+    {
+      "nombre": "Dije tubito",
+      "tipoJoya": [2, 5],
+      "tipoMetal": 2,
+      "img": "im22"
+    },
+    { "nombre": "Dije Nido", 
+    "tipoJoya": 2, 
+    "tipoMetal": 2, 
+    "img": "im17" 
+  },
+    {
+      "nombre": "Dije 4 elementos",
+      "tipoJoya": [2, 5],
+      "tipoMetal": 2,
+      "img": "im23"
+    },
+    {
+      "nombre": "Pulsera protectora",
+      "tipoJoya": 3,
+      "tipoMetal": 2,
+      "img": "im24"
+    },
+    {
+      "nombre": "Dije bolita",
+      "tipoJoya": [2, 5],
+      "tipoMetal": 2,
+      "img": "im25"
+    },
+    {
+      "nombre": "Pulsera circulo",
+      "tipoJoya": 3,
+      "tipoMetal": [1, 2],
+      "img": "im26"
+    },
+    {
+      "nombre": "Medalla circular",
+      "tipoJoya": 2,
+      "tipoMetal": [1, 2],
+      "img": "im27"
+    },
+    {
+      "nombre": "Collar ciclos",
+      "tipoJoya": [2, 5],
+      "tipoMetal": [1, 2],
+      "img": "im28"
+    }
+  ]
+}

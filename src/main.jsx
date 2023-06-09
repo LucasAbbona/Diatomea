@@ -7,17 +7,18 @@ import Faq from "./pages/FAQ";
 import Servicios from "./pages/Servicios";
 import Inicio from "./pages/Inicio";
 import NavBarTop from "./components/NavBar/NavBarTop";
-
+import Creaciones from "./pages/Creaciones";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
       <NavBarTop />
-      <main className="bg-bg-page mt-[152px] max-[768px]:mt-[79px]">
+      <main className="bg-bg-page mt-[152px] max-[768px]:mt-[79px] ">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/QuienesSomos" element={<QuienesSomos />} />
           <Route path="/FAQ" element={<Faq />} />
           <Route path="/Servicios" element={<Servicios />} />
+          <Route path="/Creaciones" element={<Creaciones />} />
           <Route path="/Servicios/Personalizada" element={<Servicios section={'custom'}/>}/>
           <Route path="/Servicios/Grabaciones" element={<Servicios section={'grabado'}/>}/>
           <Route path="/Servicios/Limpieza" element={<Servicios section={'clean'}/>}/>
