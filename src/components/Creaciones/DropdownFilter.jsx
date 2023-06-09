@@ -6,11 +6,12 @@ const DropdownFilter = ({ arr, filterArr, setterFilterArr }) => {
   const nameArr = Object.getOwnPropertyNames(arr)[0].replaceAll("_", " ");
   const type = Object.getOwnPropertyNames(arr)[0];
   const [dropdownFilter, setDropdownFilter] = useState(false);
-  
+
   function toSentenceCase(str) {
     return str.toLowerCase().charAt(0).toUpperCase() + str.slice(1);
   }
 
+  // Fx para agregar o sacar del array de fitler arr las categorias
   const onChangeFx = (index, type) => {
     // Si ya experimentalStyled, quiero sacarlo
 
@@ -22,6 +23,10 @@ const DropdownFilter = ({ arr, filterArr, setterFilterArr }) => {
     } else {
       setterFilterArr({ ...filterArr, [type]: [...filterArr[type], index] });
     }
+  };
+
+  const checkedState = (index) => {
+    return Boolean(filterArr[type].find((e) => e == index));
   };
 
   const renderFilter = arr[Object.getOwnPropertyNames(arr)].map(
@@ -37,6 +42,7 @@ const DropdownFilter = ({ arr, filterArr, setterFilterArr }) => {
         <input
           type="checkbox"
           name={filter}
+          checked={checkedState(index + 1)}
           className="checkbox-filter"
           onChange={(e) => onChangeFx(index + 1, type)}
         />
