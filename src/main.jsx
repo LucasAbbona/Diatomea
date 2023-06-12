@@ -8,6 +8,7 @@ import Servicios from "./pages/Servicios";
 import Inicio from "./pages/Inicio";
 import NavBarTop from "./components/NavBar/NavBarTop";
 import Creaciones from "./pages/Creaciones";
+import Informacion from "./pages/Informacion";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <div className="App">
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/Servicios/Grabaciones" element={<Servicios section={'grabado'}/>}/>
           <Route path="/Servicios/Limpieza" element={<Servicios section={'clean'}/>}/>
           <Route path="/Servicios/Reparaciones" element={<Servicios section={'repair'}/>}/>
+          <Route path="/Informacion/:routInfo" element={<Informacion />} />
         </Routes>
       </main>
     </div>
