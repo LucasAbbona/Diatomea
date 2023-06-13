@@ -38,7 +38,6 @@ const NavBar = () => {
     {
       //Información
       text: "Información",
-      path: "/Informacion",
       icon: <MdOutlineKeyboardArrowDown />,
       dropdown: <Information />,
     },

@@ -1,7 +1,7 @@
 import React from "react";
 import BtnSolid from "../Buttons/BtnSolid";
 
-const CardLink = ({ title, img, btnText }) => {
+const CardLink = ({ title, img, btnText, path }) => {
   return (
     <div
       style={{ backgroundImage: `url(${img})` }}
@@ -9,7 +9,7 @@ const CardLink = ({ title, img, btnText }) => {
       flex flex-col items-center justify-between p-12"
     >
       <h4 className="w-full font-fahkwang text-3xl font-bold">{title}</h4>
-      <BtnSolid btnText={btnText} variation={"white"} path={"/informacion"}></BtnSolid>
+      <BtnSolid btnText={btnText} variation={"white"} path={"/" + path}></BtnSolid>
     </div>
   );
 };
