@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import InformacionContainer from "../components/Informacion/InformacionContainer";
 import { useParams } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const Informacion = () => {
           italicText:
             "Deseamos que tu joya DIATOMEA que no solo tenga valor estético y emocional, sino que también sea cómoda de usar. En definitiva que sea perfecta para vos.",
           innerText: (
-            <p className=" font-nunito text-sm text-justify w-[560px] ">
+            <p className=" font-nunito text-sm text-justify w-[560px] max-[920px]:w-full">
               Es muy importante saber tus medidas para que la joya se ajuste a
               vos, por eso te dejamos los siguiente datos a tener en cuenta:
               <ul className=" [&>*]:list-disc [&>*]:list-inside [&>*]:indent-4">
@@ -95,7 +95,7 @@ const Informacion = () => {
           italicText:
             "En DIATOMEA, nos enorgullece la calidad y belleza de nuestras joyas artesanales.",
           innerText: (
-            <p className=" font-nunito text-sm text-center w-[560px] ">
+            <p className=" font-nunito text-sm text-center w-[560px] max-[920px]:w-full">
               Cada pieza es creada con dedicación y atención al detalle,
               utilizando materiales de alta calidad y técnicas de orfebrería
               tradicionales. Además, ofrecemos una garantía en nuestras joyas
@@ -139,7 +139,7 @@ const Informacion = () => {
           italicText:
             "¿Buscas un regalo único y especial para alguien importante? ¡Tenemos la solución perfecta para vos!",
           innerText: (
-            <p className=" font-nunito text-sm text-justify w-[560px] ">
+            <p className=" font-nunito text-sm text-justify w-[560px] max-[920px]:w-full">
               En DIATOMEA, ofrecemos Gift Cards que te permitirán regalar joyas
               artesanales únicas y de alta calidad a tus seres queridos. Además,
               nos aseguramos de que la experiencia de recibir una joya DIATOMEA
@@ -178,13 +178,18 @@ const Informacion = () => {
     },
   ];
 
+  // Buscador segun la ruta
   const findInfoParam = infoCollection.find((e) => {
     const nameArr = Object.getOwnPropertyNames(e);
     return e[nameArr][0].id == routInfo;
   });
+
   return (
-    <section className="flex justify-center p-12">
-      <InformacionContainer obj={findInfoParam} routInfo={routInfo}></InformacionContainer>
+    <section className="flex justify-center p-12 max-[650px]:px-6">
+      <InformacionContainer
+        obj={findInfoParam}
+        routInfo={routInfo}
+      ></InformacionContainer>
     </section>
   );
 };

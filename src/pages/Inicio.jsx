@@ -168,12 +168,14 @@ const Inicio = () => {
       title: "Gift Cards",
       btnText: "Saber más",
       img: giftCard,
+      path: "Informacion/regalos",
     },
     {
       // Packaging
       title: "Packaging",
       btnText: "Saber más",
       img: packaging,
+      path: "Informacion/regalos",
     },
   ];
   const igPostCollection = [
@@ -196,19 +198,19 @@ const Inicio = () => {
   ];
 
   //para el set time out
-  const test = useRef(null)
+  const test = useRef(null);
 
   //Iteracion del carrusel
   useEffect(() => {
     if (itemcarousel == carouselCollection.length - 1) {
-      test.current = setTimeout(() => setItemCarousel(0), 5000)
+      test.current = setTimeout(() => setItemCarousel(0), 5000);
     } else {
-      test.current = setTimeout(() => setItemCarousel(itemcarousel + 1), 5000)
+      test.current = setTimeout(() => setItemCarousel(itemcarousel + 1), 5000);
     }
   });
   // Fx que cambia de estado el index al tocar el boton del carousel
   const onClickHandlerFx = (index) => {
-    clearTimeout(test.current)
+    clearTimeout(test.current);
     setItemCarousel(index);
   };
   // render handler carousel
@@ -253,6 +255,7 @@ const Inicio = () => {
       img={card.img}
       key={card.title}
       btnText={card.btnText}
+      path={card.path}
     ></CardLink>
   ));
   // render instagram post

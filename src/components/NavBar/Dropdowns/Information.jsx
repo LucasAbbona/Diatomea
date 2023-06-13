@@ -23,7 +23,7 @@ const Information = ({}) => {
       <div className="hidden md:inline-block w-px min-h-max bg-primary-grey"></div>
       <Link
         to={"/Informacion/regalos"}
-        className="hidden md:flex flex-row items-start w-1/4"
+        className="flex md:flex-row flex-col items-center md:items-start md:w-1/4"
       >
         <p className="text-lg md:text-base hover:underline cursor-pointer">
           Regalos

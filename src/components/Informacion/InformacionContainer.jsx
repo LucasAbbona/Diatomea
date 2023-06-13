@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TabInfo from "./TabInfo";
 
-const InformacionContainer = ({ obj }) => {
+const InformacionContainer = ({ obj, routInfo }) => {
   // Obtengo el nombre del array para acceder a el
   const nameObj = Object.getOwnPropertyNames(obj)[0];
   //   Accedo al array de objetos
@@ -20,13 +20,13 @@ const InformacionContainer = ({ obj }) => {
     setTabInfoFin(findInfoFx);
   }, [tabBtnSelected]);
   
-console.log("TAB",tabInfoFind)
+console.log("tabBtnSelected",tabBtnSelected)
   return (
     <article className="w-full flex flex-col gap-8 items-center">
       <h3 className=" font-fahkwang font-bold text-2xl text-center border-b-2 border-secondary-darkBrown w-fit px-3 pb-2">
         {arrObj.title}
       </h3>
-      <p className=" font-nunito italic font-normal text-base text-center w-[760px]">
+      <p className=" font-nunito italic font-normal text-base text-center w-[760px] max-[920px]:w-full">
         {arrObj.italicText}
       </p>
       {arrObj.innerText}
@@ -35,6 +35,7 @@ console.log("TAB",tabInfoFind)
         tabInfo={tabInfoFind}
         tabBtnSelected={tabBtnSelected}
         setterTanBtnSelected={setTabBtnSelected}
+        routInfo={routInfo}
       ></TabInfo>
     </article>
   );

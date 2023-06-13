@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const TabButtons = ({
   textButton,
   setterTanBtnSelected,
   tabBtnSelected,
   id,
+  routInfo,
+  index,
 }) => {
-  console.log(id, tabBtnSelected)
+  console.log(id, tabBtnSelected, routInfo);
   // Funcion on click donde cambia el estado segun el id del boton seleccionado
   const onClickFX = () => {
     setterTanBtnSelected(id);
   };
+  // Use effect que analiza si cambió la ruta por lo tanto vuelve a setear el id
+  useEffect(() => {
+    if (index == 0) setterTanBtnSelected(id);
+  }, [routInfo]);
   return (
     <div>
       <button
