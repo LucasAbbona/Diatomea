@@ -9,6 +9,7 @@ const BtnNavbar = ({
   setterMenu,
   dropdown,
   onHoverFx,
+  searchbar
 }) => {
   // Estado para manejar el estilado del dropdown
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
