@@ -1,12 +1,14 @@
 import BtnNavbar from "./BtnNavbar";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
+import { RxMagnifyingGlass } from "react-icons/rx";
+
 import { RxCross1 } from "react-icons/rx";
-import SearchBar from "./SearchBar";
 import { useState } from "react";
 import Information from "./Dropdowns/Information";
 import Creations from "./Dropdowns/Creations";
 import Services from "./Dropdowns/Services";
+import SearchBar from "./Dropdowns/SearchBar";
 
 const NavBar = () => {
   //Coleccion de botones NavBar
@@ -46,6 +48,12 @@ const NavBar = () => {
       text: "FAQ",
       path: "/FAQ",
     },
+    {
+      //Información
+      searchbar: true,
+      icon: <RxMagnifyingGlass size={"24px"}/>,
+      dropdown: <SearchBar />,
+    },
   ];
   // Estado para definir el menu responsive si esta abierto o no
   const [menu, setMenu] = useState(false);
@@ -76,7 +84,7 @@ const NavBar = () => {
     <>
       <nav
         className="bg-bg-navBar py-6 pb-6 px-20 md:px-26 lg:px-40 flex relative justify-center items-center
-      max-[768px]:p-0 z-40"
+      max-[768px]:p-0 z-40 w-full shadow-[-3px_3px_15px_rgba(0,0,0,0.25)]"
       >
         <button
           className="inline md:hidden absolute z-50 left-5 text-bg-page"
@@ -95,11 +103,11 @@ const NavBar = () => {
           }
         >
           {renderBtnNavBar}
-          <SearchBar></SearchBar>
+          {/* <SearchBar></SearchBar> */}
         </ul>
       </nav>
       <div
-        className="hidden md:inline-block w-full"
+        className="hidden md:inline-block w-full shadow-[-3px_3px_15px_rgba(0,0,0,0.25)]"
         onMouseLeave={(e) => onHoverFx(false)}
       >
         {/* renderizo si existe y ademas el componente pasado */}
