@@ -33,7 +33,7 @@ const NavBar = () => {
     {
       //Servicios
       text: "Servicios",
-      path: "/Servicios",
+      path: "/Servicios/Personalizada",
       icon: <MdOutlineKeyboardArrowDown />,
       dropdown: <Services />,
     },
