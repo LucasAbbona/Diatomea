@@ -108,7 +108,7 @@ const NavBar = () => {
       </nav>
       <div
         className="hidden md:inline-block w-full shadow-[-3px_3px_15px_rgba(0,0,0,0.25)]"
-        onMouseLeave={(e) => onHoverFx(false)}
+        onMouseLeave={() => onHoverFx(false)}
       >
         {/* renderizo si existe y ademas el componente pasado */}
         {desktopDropdown}
