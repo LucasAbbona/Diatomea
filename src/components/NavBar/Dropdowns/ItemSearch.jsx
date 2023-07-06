@@ -1,9 +1,10 @@
 import React from "react";
 const ItemSearch = ({ item }) => {
+  console.log(item.img)
   return (
     <div className=" flex flex-col items-center gap-4 selected-none">
       <img
-        src={"../../../../public/productos/" + item.img + ".jpg"}
+        src={"productos/" + item.img + ".jpg"}
         alt=""
         className=" rounded w-40 h-40  "
       />

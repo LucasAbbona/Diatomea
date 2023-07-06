@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from "react";
 import InformacionContainer from "../components/Informacion/InformacionContainer";
 import { useParams } from "react-router-dom";
+import infoAnillos from "../assets/info/infoAnillos.png"
+import infoCadenas from "../assets/info/infoCadenas.png"
+import infoCalidad from "../assets/info/infoCalidad.png"
+import infoGarantia from "../assets/info/infoGarantia.png"
+import infoGift from "../assets/info/infoGift.png"
+import infoPack from "../assets/info/infoPack.png"
+import infoPulseras from "../assets/info/infoPulseras.png"
+import tablaAnillos from "../assets/info/tablaAnillos.png"
+import tablaCadenas from "../assets/info/tablaCadenas.png"
+import tablaPulseras from "../assets/info/tablaPulseras.png"
+
 
 const Informacion = () => {
   const { routInfo } = useParams();
@@ -56,8 +67,8 @@ const Informacion = () => {
                 "Busca en la Tabla de medidas la medida ideal de tu anillo.",
               ],
               recom: "Recomendamos siempre que el anillo quede algo holgado",
-              infoPng: "infoAnillos",
-              tabPng: "tablaAnillos",
+              infoPng: infoAnillos,
+              tabPng: tablaAnillos,
             },
             {
               title: "¿Cómo saber mi tamaño de cadena?",
@@ -68,8 +79,8 @@ const Informacion = () => {
                 "Busca en la Tabla de medidas la medida que coincida o se acerque a la tomada del colgante.",
               ],
               text: "La medida de la cadena dependerá de tu gusto y estilo. Puedes elegir esta a partir de una cadena que ya poseas y que te guste como se ve en tí, de la siguiente manera:",
-              infoPng: "infoCadenas",
-              tabPng: "tablaCadenas",
+              infoPng: infoCadenas,
+              tabPng: tablaCadenas,
             },
             {
               title: "¿Cómo saber mi tamaño de pulsera?",
@@ -80,8 +91,8 @@ const Informacion = () => {
                 "Busca en la Tabla de medidas la medida ideal de tu pulsera.",
               ],
               recom: "Recomendamos siempre que la pulsera quede algo holgada",
-              infoPng: "infoPulseras",
-              tabPng: "tablaPulseras",
+              infoPng: infoPulseras,
+              tabPng: tablaPulseras,
             },
           ],
         },
@@ -164,13 +175,13 @@ const Informacion = () => {
               title: "Gift Card",
               id: "gift",
               text: "Con las Tarjetas de Regalo Diatomea, puedes obsequiar una joya única y dejar que esa persona elija su diseño favorito.Además, si tiene pensada una idea específica, podemos trabajar en base a ella para crear una joya que se adapte a sus expectativas. No hay nada más especial que tener una joya totalmente única. Solicitá la imagen así la compartís para regalar o retirar la gift card por el taller.",
-              infoPng: "infoGift",
+              infoPng: infoGift,
             },
             {
               title: "Packaging Exclusivo",
               id: "packaging",
               text: "En DIATOMEA, sabemos que la presentación de un regalo es muy importante, por eso ofrecemos la opción de añadir un packaging de diseño a tu compra. Nuestros paquetes incluyen una caja personalizada con nuestro logo y detalles artísticos cuidadosamente elegidos para realzar la belleza de nuestras joyas, realizada con madera de selección lustrada y con posibilidad de grabar en la parte interna algo especial; una frase, un nombre, palabras o una fecha. Además, nuestros empaques están hechos con materiales de alta calidad para garantizar que tus regalos lleguen y se conserven en perfecto estado y con un toque especial. Elije esta opción y sorprende a tus seres queridos con una presentación única y exclusiva.",
-              infoPng: "infoPack",
+              infoPng: infoPack,
             },
           ],
         },

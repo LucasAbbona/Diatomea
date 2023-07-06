@@ -61,7 +61,7 @@ const TabInfo = ({
           )}
         </div>
         <img
-          src={`../../../public/assets/${tabInfo.infoPng}.png`}
+          src={tabInfo.infoPng}
           alt=""
           className=" w-80 h-80 object-cover rounded object-bottom max-[920px]:w-56 max-[920px]:h-60"
         />
@@ -72,7 +72,7 @@ const TabInfo = ({
             Tabla de medidas
           </h6>
           <img
-            src={`../../../public/assets/${tabInfo.tabPng}.png`}
+            src={tabInfo.tabPng}
             alt=""
             className=" w-80"
           />
