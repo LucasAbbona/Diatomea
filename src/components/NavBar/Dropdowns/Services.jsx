@@ -6,7 +6,7 @@ const Services = () => {
       <div className="flex md:flex-row flex-col md:w-1/3">
         <Link
           to={"/Servicios/Personalizada"}
-          className="md:w-1/4 text-lg text-start px-8 md:px-0 md:text-base"
+          className="md:w-1/3 text-lg text-start px-8 md:px-0 md:text-base"
         >
           Ver todo
         </Link>

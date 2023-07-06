@@ -17,7 +17,7 @@ const Servicios = ({ section }) => {
             <ServiceHeader />
             {/* Navegation */}
             <div className="hidden md:flex gap-1 justify-center">
-                <BtnSections text={'Joya Perzonalizada'} path={'/Servicios/Personalizada'} condition={section == 'custom' ? true : false} />
+                <BtnSections text={'Joya Personalizada'} path={'/Servicios/Personalizada'} condition={section == 'custom' ? true : false} />
                 <BtnSections text={'Arreglo y restauracion'} path={'/Servicios/Reparaciones'} condition={section == 'repair' ? true : false} />
                 <BtnSections text={'Grabado'} path={'/Servicios/Grabaciones'} condition={section == 'grabado' ? true : false} />
                 <BtnSections text={'Limpieza'} path={'/Servicios/Limpieza'} condition={section == 'clean' ? true : false} />

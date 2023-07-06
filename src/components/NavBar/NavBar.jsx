@@ -27,8 +27,8 @@ const NavBar = () => {
       //Creaciones
       text: "Creaciones",
       path: "/Creaciones",
-      icon: <MdOutlineKeyboardArrowDown />,
-      dropdown: <Creations />,
+      // icon: <MdOutlineKeyboardArrowDown />,
+      // dropdown: <Creations />,
     },
     {
       //Servicios
