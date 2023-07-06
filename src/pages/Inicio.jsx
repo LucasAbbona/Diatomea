@@ -355,7 +355,11 @@ const Inicio = () => {
         className="flex flex-col items-center gap-8 w-[1350px] max-[1350px]:w-full 
         max-[1350px]:px-12
         max-[424px]:px-4"
-      >
+      ><h2
+      className=" font-fahkwang font-bold text-3xl 
+    w-full pt-[10%] flex flex-col gap-4"
+    >Diseños destacados</h2>
+
         <DraggableXaxis items={renderDiseñoCard}></DraggableXaxis>
 
         <BtnOutlined
