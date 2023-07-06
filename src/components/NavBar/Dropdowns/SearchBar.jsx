@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { RxMagnifyingGlass } from "react-icons/rx";
-import productos from "../../../../public/productos/productos.json";
+import Productos from "../../../assets/Productos/Productos.jsx";
 import ItemSearch from "./ItemSearch";
 import ItemFilter from "./ItemFilter";
 import { useDraggable } from "react-use-draggable-scroll";
@@ -21,7 +21,7 @@ const SearchBar = () => {
   ));
 
   // Renderizo los filtros
-  const renderFilters = productos.categorias[0].tipos_de_joya.map(
+  const renderFilters = Productos.categorias[0].tipos_de_joya.map(
     (item, index) => (
       <ItemFilter
         key={index}
@@ -43,7 +43,7 @@ const SearchBar = () => {
       }
     }
     const filterProductos = () => {
-      return productos.productos.filter((prod) => {
+      return Productos.productos.filter((prod) => {
         if (someFx("tipos_de_joya", prod)) {
           return prod;
         }
@@ -59,7 +59,7 @@ const SearchBar = () => {
     }
     setFilterArr([]);
     setSearchedItem(
-      productos.productos.filter((prod) => {
+      Productos.productos.filter((prod) => {
         if (
           prod.nombre
             .trim()
@@ -72,13 +72,13 @@ const SearchBar = () => {
     );
   };
 
-  console.log(filterArr);
+
   useEffect(() => {
     setRenderItems(searchedItem);
   }, [searchedItem]);
   return (
-    <div className=" flex flex-col gap-12 items-center w-full p-24 bg-[#FFFFFF]">
-      <div className=" flex justify-between gap-4  w-full max-[1020px]:flex-col">
+    <div className=" flex flex-col gap-12 items-center w-full p-24 bg-[#FFFFFF] max-[670px]:p-2">
+      <div className=" flex justify-between gap-4  w-full max-[1020px]:flex-col max-[670px]:p-2">
         <label
           htmlFor="search"
           className="font-nunito flex gap-3 items-center border-b-2 w-1/2 px-2 justify-between max-[1020px]:w-full h-14"
@@ -95,7 +95,7 @@ const SearchBar = () => {
         </label>
         <div className="border-l-2 border-primary-lightGrey w-1/2 p-2 flex flex-col gap-4 max-[1020px]:border-l-0  max-[1020px]:w-full">
           <p className="font-nunito ">Buscar por categoría</p>
-          <div className=" flex gap-2 ">{renderFilters}</div>
+          <div className=" flex gap-2 max-[670px]:flex-col">{renderFilters}</div>
         </div>
       </div>
       <div className=" flex flex-col w-full gap-4">

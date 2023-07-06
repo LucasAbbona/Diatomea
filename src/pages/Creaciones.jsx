@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import productos from "../../public/productos/productos.json";
+import Productos from "../assets/Productos/Productos.jsx";
 import Table from "../components/Creaciones/Table";
 import { TbFilter } from "react-icons/tb";
 import { MdClose } from "react-icons/md";
 import DropdownFilter from "../components/Creaciones/DropdownFilter";
 const Creaciones = () => {
   // Estado que guarda el array a renderizar
-  const [renderItems, setRenderItems] = useState(productos.productos);
+  const [renderItems, setRenderItems] = useState(Productos.productos);
   // Estado que guarda los filtros seleccionados
   const [filterArr, setFilterArr] = useState({
     tipos_de_joya: [],
@@ -35,7 +35,7 @@ const Creaciones = () => {
   const [filterMenu, setFilterMenu] = useState(false);
 
   // Dropdowns menu
-  const renderFilters = productos.categorias.map((item, index) => (
+  const renderFilters = Productos.categorias.map((item, index) => (
     <DropdownFilter
       arr={item}
       key={index}
@@ -53,7 +53,7 @@ const Creaciones = () => {
   }
   // Fx para filtrar y crear nuevo array
   const filterProductos = () => {
-    return productos.productos.filter((prod) => {
+    return Productos.productos.filter((prod) => {
       if (someFx("tipos_de_metal", prod) && someFx("tipos_de_joya", prod)) {
         return prod;
       }
@@ -67,7 +67,7 @@ const Creaciones = () => {
   };
 
   const cleanFilterFx = () => {
-    setRenderItems(productos.productos);
+    setRenderItems(Productos.productos);
     setFilterMenu(!filterMenu);
     setFilterArr(({
       tipos_de_joya: [],

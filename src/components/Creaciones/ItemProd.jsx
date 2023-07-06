@@ -1,8 +1,9 @@
 import React from "react";
 const ItemProd = ({ nombre, img, idRow }) => {
+  console.log(typeof img)
   return (
     <div
-      style={{ backgroundImage: `url(productos/${img}.jpg)` }}
+      style={{ backgroundImage: `url('/productos/${img}.jpg')` }}
       className={
         " relative bg-cover bg-no-repeat bg-center flex flex-col justify-end w-full max-w-[320px] shadow-[-2px_4px_7px_rgba(0,0,0,0.25);] rounded group overflow-hidden transition-all " +
         (idRow == 1

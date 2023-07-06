@@ -43,7 +43,7 @@ const BtnNavbar = ({
               // Condicional que estila el dropdown si está seleccionado
               (isOpenDropdown ? " max-[768px]:flex " : " max-[768px]:hidden ")
             }
-            onClick={(e) => setterMenu(!stateMenu)}
+            // onClick={(e) => {setterMenu(!stateMenu)}}
           >
             {dropdown}
           </div>
